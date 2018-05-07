@@ -9,10 +9,10 @@ class Anagram
 
   def match(anagrams_ary)
     temp = []
+    init_word = anagram.split("").sort 
     anagrams_ary.each do |word|
       ary_word = word.split("").sort
-      init_word = anagram.split("").sort
-      temp = ary_word == init_word ? anagram : []
+      temp = ary_word == init_word ? init_word.join(//) : []
     end
     temp
   end
