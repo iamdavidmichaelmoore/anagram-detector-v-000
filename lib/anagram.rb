@@ -8,13 +8,12 @@ class Anagram
   end
 
   def match(anagrams_ary)
-    temp = ""
+    result = []
     init_word = anagram.split("").sort
     anagrams_ary.each do |word|
       ary_word = word.split("").sort
-      ary_word == init_word ? temp << word : temp = []
-      puts temp
+      ary_word == init_word ? result << word : []
     end
-    temp
+    result
   end
 end
