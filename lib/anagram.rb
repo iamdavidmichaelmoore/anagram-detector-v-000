@@ -13,6 +13,7 @@ class Anagram
     anagrams_ary.each do |word|
       ary_word = word.split("").sort
       temp = ary_word == init_word ? word : []
+      binding.pry 
     end
     temp
   end
