@@ -12,7 +12,6 @@ class Anagram
     anagrams_ary.each do |word|
       ary_word = word.split("").sort
       init_word = anagram.split("").sort
-      binding.pry
       temp = ary_word == init_word ? anagram : []
     end
     temp
