@@ -10,7 +10,6 @@ class Anagram
 
   def match(anagrams_ary)
     temp = []
-    puts anagrams_ary
     puts anagram
     anagrams_ary.each do |word|
       ary_word = word.split("").sort
