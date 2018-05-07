@@ -8,7 +8,7 @@ class Anagram
   end
 
   def match(anagrams_ary)
-    temp = []
+    temp = ""
     init_word = anagram.split("").sort
     anagrams_ary.each do |word|
       ary_word = word.split("").sort
